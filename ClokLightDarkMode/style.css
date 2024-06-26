@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* get color mode */
+:root{ 
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+}
+.time{
+    font-size: 200px;
+}
+.toggle{
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 20px;
+}
+html.dark{
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+html.dark {
+    background: #111;
+    color: var(--primary-color);
+}
+html{
+    transition: all 0.5s ease-in;
+}
